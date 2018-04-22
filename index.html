@@ -62,7 +62,7 @@
       <ul class="nav nav-pills flex-column">
       	<li class="nav-item text-center" style="height: 40vh;">
       		<img class="img-responsive img-circle" src="img/logo.png" style="width: 50%;height: auto;" />
-      		<b style="display: block; border-top:1px solid grey; border-bottom: 1px solid grey;">
+      		<b class="shadow p-1 mb-2 bg-white" style="display: block; border-top:1px solid grey; border-bottom: 1px solid grey;">
       			<h2 style="display: inline;">P</h2>RERNA FAMILY</b>
       			<p>(A Step towards education)</p>
        	</li>
@@ -138,8 +138,61 @@
 			</div>
 	  </div>        
       <div id="section3">       <hr>  
-        <h3>Welcome to PRERNA</h3>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        <h3 class="text-center">Welcome to PRERNA</h3>
+        <div class="row">
+        	<div class="col-9">
+        		<h4><b>Contact</b></h4>
+        		<dl style="margin-left: 10%;">
+        			<dt>Abhinav Nagar</dt>
+        			<dd style="margin-left:5%;">Founder, 9450584600, abhi@gmail.com</dd>
+        			
+        		</dl>
+        		<div style="height:200px; width:90%; margin-left: 10%;" id="map">
+					</div>
+					<script>
+					      function initMap() {
+					      var myLatLng ={lat: 25.8374823, lng: 82.6719384};
+					        var map = new google.maps.Map(document.getElementById('map'), {
+					          center: myLatLng,
+					          zoom: 10
+					        });
+					var marker = new google.maps.Marker({
+					          map: map,
+					          position: myLatLng,
+					});
+					      }
+
+					    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIy9zYCBN3A7yTT2SRtMnlty-C3fWxKJI&callback=initMap"
+					    async defer></script>
+        	</div>
+        	<div class="col-3">
+        		<h4><b>Latest News</b></h4>
+	        		<div id="demo" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="carousel-caption">
+				        <h3 style="color: black;">Jaunpur</h3>
+				        <p style="color: black;">Prerna Classes! Thanks for support.</p>
+				      </div>   
+				    </div>
+				    <div class="carousel-item">
+				      <div class="carousel-caption">
+				        <h3 style="color: black;">Allahabad</h3>
+				        <p style="color: black;">Prerna Classes! Thanks for support.</p>
+				      </div>   
+				    </div>
+				    <div class="carousel-item">
+				      <div class="carousel-caption">
+				        <h3 style="color: black;">Azamgarh</h3>
+				        <p style="color: black;">Prerna Class! Thanks for support.</p>
+				      </div>   
+				    </div>
+				  </div>
+				</div>
+        	</div>
+        </div>
+
       </div>
       <div id="section41">         
         <h1>Section 4-1</h1>
